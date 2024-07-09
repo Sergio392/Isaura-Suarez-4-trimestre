@@ -1,0 +1,256 @@
+
+#1. 
+
+c = float(input("Grados cecius que quiere convertir a farenheit: "))
+
+f = c * 1.8+32
+
+print(f"{f} farenheit")
+
+
+#2
+
+peso = float(input("Cual es su peso(KG): "))
+
+estatura = float(input("Cual es su estatura: "))
+
+imc = peso/(estatura**2)
+
+print(f"El indice de masa corporal es de: {imc}")
+
+#3
+
+num = int(input("Digite un numero: "))
+
+if num % 2 == 0:
+    print("El numero es par")
+else:
+    print("El numero no es par")
+
+#4
+
+notas = []
+
+n = 0
+
+while n < 5:
+    notas.append(float(input(f"Digite la nota {n+1}: ")))
+    n += 1
+    
+prom = sum(notas)/5
+
+print(f"El promedio es {prom}")
+
+#5
+
+pantalon = 75000
+
+camisa = 35000
+
+subtotal = pantalon+camisa
+
+cel = 900000
+
+total = (pantalon+camisa+cel)*0.14
+
+print(f"El subtotal de la camisa y el pantalon es de: {subtotal}")
+
+print(f"El total gastado en la tienda es de: {total}")
+
+#6
+
+print("Digite una opcion")
+print("1. IMC")
+print("2. Porcentaje de grasa")
+print("3. Tasa Metabólica Basal")
+
+opc = int(input("Elija una opcion: "))
+
+if opc == 1:
+    peso = float(input("Cual es su peso(KG): "))
+    estatura = float(input("Cual es su estatura: "))
+    imc = peso/(estatura**2)
+    print(f"El indice de masa corporal es de: {imc}")
+elif opc == 2:
+    edad = int(input("Cual es tu edad: "))
+    peso = float(input("Cual es su peso(KG): "))
+    estatura = float(input("Cual es su estatura: "))
+    imc = peso/(estatura**2)
+    val_genero = int(input("Masculino (1) o Femenino (2): "))
+    if val_genero == 1:
+        genero = 10.8
+    elif val_genero == 2:
+        genero = 0
+    gc = 1.2*imc+0.23*edad-5.4-genero
+    print(f"Su porcentaje de grasa corporal es {gc:.3f}")
+elif opc == 3:
+    peso = float(input("Cual es su peso(KG): "))
+    estatura = float(input("Cual es su estatura(CM): "))
+    edad = int(input("Cual es tu edad: "))
+    val_genero = int(input("Masculino (1) o Femenino (2): "))
+    if val_genero == 1:
+        genero = 5
+    elif val_genero == 2:
+        genero = -161
+    else:
+        print("Error")
+    tmb = (10*peso)+(6.25*estatura)-(5*edad)+genero
+    print(f"Su tasa metabólica basal es {tmb}")
+else:
+    print("Error")
+
+#7
+
+n = int(input("Digite un numero: "))
+d = int(input("Digite un numero: "))
+
+print(d*d)
+
+if n % (d*d) == 0:
+    print (f"El resultado es 2")
+elif n % d == 0 and n % (d*d) != 0:
+    print ("El resultado es 1")
+else: 
+    print("El resultado es 0")
+
+#8
+
+for i in range(10, 9999):
+    if i >= 10 and i <= 99 and i % 2 != 0:
+        print(f"{i} Regalo niña")
+    elif i >= 10 and i <= 99 and i % 2 == 0:
+        print(f"{i} Regalo niño")
+    elif i % 2 == 0 and i >= 100 and i <= 999:
+        print(f"{i} Regalo Hombre")
+    elif i % 2 != 0 and i >= 100 and i <= 999:
+        print(f"{i} Regalo Mujer")
+    
+#9
+
+#1. 
+
+c = float(input("Grados cecius que quiere convertir a farenheit: "))
+
+f = c * 1.8+32
+
+print(f"{f} farenheit")
+
+
+#2
+
+peso = float(input("Cual es su peso(KG): "))
+
+estatura = float(input("Cual es su estatura: "))
+
+imc = peso/(estatura**2)
+
+print(f"El indice de masa corporal es de: {imc}")
+
+#3
+
+num = int(input("Digite un numero: "))
+
+if num % 2 == 0:
+    print("El numero es par")
+else:
+    print("El numero no es par")
+
+#4
+
+notas = []
+
+n = 0
+
+while n < 5:
+    notas.append(float(input(f"Digite la nota {n+1}: ")))
+    n += 1
+    
+prom = sum(notas)/5
+
+print(f"El promedio es {prom}")
+
+#5
+
+pantalon = 75000
+
+camisa = 35000
+
+subtotal = pantalon+camisa
+
+cel = 900000
+
+total = (pantalon+camisa+cel)*0.14
+
+print(f"El subtotal de la camisa y el pantalon es de: {subtotal}")
+
+print(f"El total gastado en la tienda es de: {total}")
+
+#6
+
+print("Digite una opcion")
+print("1. IMC")
+print("2. Porcentaje de grasa")
+print("3. Tasa Metabólica Basal")
+
+opc = int(input("Elija una opcion: "))
+
+if opc == 1:
+    peso = float(input("Cual es su peso(KG): "))
+    estatura = float(input("Cual es su estatura: "))
+    imc = peso/(estatura**2)
+    print(f"El indice de masa corporal es de: {imc}")
+elif opc == 2:
+    edad = int(input("Cual es tu edad: "))
+    peso = float(input("Cual es su peso(KG): "))
+    estatura = float(input("Cual es su estatura: "))
+    imc = peso/(estatura**2)
+    val_genero = int(input("Masculino (1) o Femenino (2): "))
+    if val_genero == 1:
+        genero = 10.8
+    elif val_genero == 2:
+        genero = 0
+    gc = 1.2*imc+0.23*edad-5.4-genero
+    print(f"Su porcentaje de grasa corporal es {gc:.3f}")
+elif opc == 3:
+    peso = float(input("Cual es su peso(KG): "))
+    estatura = float(input("Cual es su estatura(CM): "))
+    edad = int(input("Cual es tu edad: "))
+    val_genero = int(input("Masculino (1) o Femenino (2): "))
+    if val_genero == 1:
+        genero = 5
+    elif val_genero == 2:
+        genero = -161
+    else:
+        print("Error")
+    tmb = (10*peso)+(6.25*estatura)-(5*edad)+genero
+    print(f"Su tasa metabólica basal es {tmb}")
+else:
+    print("Error")
+
+#7
+
+n = int(input("Digite un numero: "))
+d = int(input("Digite un numero: "))
+
+print(d*d)
+
+if n % (d*d) == 0:
+    print (f"El resultado es 2")
+elif n % d == 0 and n % (d*d) != 0:
+    print ("El resultado es 1")
+else: 
+    print("El resultado es 0")
+
+#8
+
+for i in range(10, 9999):
+    if i >= 10 and i <= 99 and i % 2 != 0:
+        print(f"{i} Regalo niña")
+    elif i >= 10 and i <= 99 and i % 2 == 0:
+        print(f"{i} Regalo niño")
+    elif i % 2 == 0 and i >= 100 and i <= 999:
+        print(f"{i} Regalo Hombre")
+    elif i % 2 != 0 and i >= 100 and i <= 999:
+        print(f"{i} Regalo Mujer")
+    
+#9
